@@ -5,13 +5,13 @@ import UnderlineBtn from "./shared/UnderlineBtn";
 const Hero = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex justify-center items-center">
-        <div className=" flex-1 ">
-          <div className="max-w-xs mx-auto space-y-12">
+      <div className="flex flex-col md:flex-row  justify-center items-center">
+        <div className=" flex-1 my-5 md:my-0">
+          <div className="px-3 md:px-0 max-w-xs mx-auto space-y-5 lg:space-y-12">
             <h2 className="text-[#C0345E] text-xs font-opensans">
               BRAND, DEV, ECOM, MARKETING
             </h2>
-            <h3 className="font-itc text-3xl font-semibold">
+            <h3 className=" text-4xl font-semibold">
               <span className="text-[#19293A]"> We unleash</span> <br />
               <span className="text-[#506473]">business potential</span>{" "}
             </h3>

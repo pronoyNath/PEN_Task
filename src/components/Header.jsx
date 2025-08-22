@@ -47,7 +47,7 @@ const Header = () => {
 
       if (Math.abs(delta) > THRESHOLD) {
         if (delta > 0 && y > HIDE_AFTER) setShowHeader(false); // scrolling down
-        else if (delta < 0) setShowHeader(true);               // scrolling up
+        else if (delta < 0) setShowHeader(true); // scrolling up
         lastScrollYRef.current = y;
       }
       if (y <= 0) setShowHeader(true);
@@ -59,51 +59,56 @@ const Header = () => {
 
   return (
     <>
-  
       {/* Desktop Header */}
-<header
-  className={`fixed top-0 left-0 right-0 z-40 transition-[transform,background-color] duration-300 hidden xl:block
+      <header
+        className={`fixed top-0 left-0 right-0 z-40 transition-[transform,background-color] duration-300 hidden xl:block
     ${scrolled ? "bg-white py-[20px] shadow-lg" : "bg-transparent py-[20px]"}
     ${showHeader ? "translate-y-0" : "-translate-y-full"}
   `}
->
-  <div className="container mx-auto pr-16 flex justify-between items-center">
-    <Link to="/" className=" h-16 shrink-0 w-[160px] overflow-hidden">
-      <img src={logo} alt="Site Logo" className="h-full w-full object-contain " />
-    </Link>
+      >
+        <div className="container mx-auto pr-16 flex justify-between items-center">
+          <Link to="/" className=" h-16 shrink-0 w-[160px] overflow-hidden">
+            <img
+              src={logo}
+              alt="Site Logo"
+              className="h-full w-full object-contain "
+            />
+          </Link>
 
-    <ul className="flex items-center gap-10">
-      {navlinks.map((link) => (
-        <li key={link.path}>
-          <UnderlineBtn
-            to={link.path}
-            text={link.name}
-            // 👇 Change line & text color based on scroll
-            lineColor={scrolled ? "bg-black" : "bg-white"}
-            textColor={scrolled ? "text-black" : "text-white"}
-          />
-        </li>
-      ))}
-    </ul>
-  </div>
-</header>
-
+          <ul className="flex items-center gap-10">
+            {navlinks.map((link) => (
+              <li key={link.path}>
+                <UnderlineBtn
+                  to={link.path}
+                  text={link.name}
+                  // 👇 Change line & text color based on scroll
+                  lineColor={scrolled ? "bg-black" : "bg-white"}
+                  textColor={scrolled ? "text-black" : "text-white"}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </header>
 
       {/* Mobile Header */}
       <header
-        className={`sticky top-0 z-40 py-4  transition-all duration-300 xl:hidden flex justify-between items-center px-4  ${
-          scrolled ? "bg-white gradient-shadow-mobile" : "bg-[#FBFBFB]"
+        className={`sticky top-0 z-40 py-4  transition-all duration-300 xl:hidden flex justify-between items-center shadow-sm  px-4       ${
+          scrolled ? "bg-white gradient-shadow-mobile" : "bg-[#f7f6f6]"
         }`}
       >
         <Link to="/">
-         <div className="h-13 w-[120px]">
-             <img src={logo} alt="Site Logo" className="h-full w-full object-contain" />
-         </div>
+          <div className="h-13 w-[120px]">
+            <img
+              src={logo}
+              alt="Site Logo"
+              className="h-full w-full object-contain"
+            />
+          </div>
         </Link>
         {/* responsive lg device searchbar   */}
-        
+
         <div className="flex items-center gap-1">
-         
           <button
             onClick={toggleMobileMenu}
             className="p-2 rounded-md focus:outline-none"
@@ -137,7 +142,7 @@ const Header = () => {
                     </button>
                   </div>
 
-                 <nav className="flex-1 ">
+                  <nav className="flex-1 ">
                     <Link to="/" className="w-fit inline-block">
                       <div className="h-12 w-32">
                         <img
@@ -167,7 +172,6 @@ const Header = () => {
                       ))}
                     </ul>
                   </nav>
-
                 </div>
               </motion.div>
               <div
