@@ -1,6 +1,6 @@
 import dogImg from "../assets/dog.png";
 import AnimatedBtn from "./shared/AnimatedBtn";
-import UnderlineBtn from "./shared/UnderlineBtn";
+import TitleFormate from "./TitleFormate";
 
 const Hero = () => {
   return (
@@ -11,10 +11,11 @@ const Hero = () => {
             <h2 className="text-[#C0345E] text-xs font-opensans">
               BRAND, DEV, ECOM, MARKETING
             </h2>
-            <h3 className=" text-4xl font-semibold">
-              <span className="text-[#19293A]"> We unleash</span> <br />
-              <span className="text-[#506473]">business potential</span>{" "}
-            </h3>
+
+            <TitleFormate
+              upperTxt={"We unleash"}
+              belowTxt={"business potential"}
+            />
             <p className="text-[#506473] text-sm">
               We create brand experiences which are memorable and distinct. Our
               experienced team create and develop brands with personality and

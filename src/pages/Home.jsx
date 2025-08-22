@@ -1,3 +1,4 @@
+import CapableOf from "../components/CapableOf";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 
@@ -8,6 +9,7 @@ const Home = () => {
       {/* Only push content down on mobile (<= xl). On desktop, transparent header overlays hero */}
       <main className="">
         <Hero />
+        <CapableOf/>
         <div className="bg-yellow-50 min-h-screen"></div>
       </main>
     </div>
