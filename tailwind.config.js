@@ -12,4 +12,7 @@ export default {
     },
   },
   plugins: [],
+  optimizeDeps: {
+    include: ["swiper/react", "swiper/modules"],
+  },
 }

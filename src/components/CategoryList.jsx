@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FaChevronCircleRight } from "react-icons/fa";
 
 
-
 export const CategoryList = ({ categories }) => {
   const [hovered, setHovered] = useState(null);
 

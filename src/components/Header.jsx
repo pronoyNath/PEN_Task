@@ -13,6 +13,11 @@ const Header = () => {
   const lastScrollYRef = useRef(0);
   const location = useLocation();
 
+  //   handle the overflow of mobile header.
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+  }, [isMobileMenuOpen]);
+
   const navlinks = [
     { name: "Services", path: "/services" },
     { name: "Work", path: "/work" },
@@ -81,7 +86,6 @@ const Header = () => {
                 <UnderlineBtn
                   to={link.path}
                   text={link.name}
-                  // 👇 Change line & text color based on scroll
                   lineColor={scrolled ? "bg-black" : "bg-white"}
                   textColor={scrolled ? "text-black" : "text-white"}
                 />

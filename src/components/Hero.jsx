@@ -31,8 +31,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 h-full min-h-screen">
-          <img src={dogImg} alt="Dog" className="w-full h-screen" />
+        <div className="flex-1 h-full  lg:min-h-screen">
+          <img src={dogImg} alt="Dog" className="w-full h-full lg:h-screen" />
         </div>
       </div>
     </div>
