@@ -5,17 +5,18 @@ import TitleFormate from "./TitleFormate";
 const Hero = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col md:flex-row  justify-center items-center">
+      <div className="flex flex-col md:flex-row justify-center items-start md:items-center">
         <div className=" flex-1 my-5 md:my-0">
-          <div className="px-3 md:px-0 max-w-xs mx-auto space-y-5 lg:space-y-12">
+          <div className="px-5 lg:px-3 md:px-0 max-w-sm md:max-w-xs mx-0  md:mx-auto space-y-5 lg:space-y-12 ">
             <h2 className="text-[#C0345E] text-xs font-opensans">
               BRAND, DEV, ECOM, MARKETING
             </h2>
-
-            <TitleFormate
-              upperTxt={"We unleash"}
-              belowTxt={"business potential"}
-            />
+            <div className="">
+              <TitleFormate
+                upperTxt={"We unleash"}
+                belowTxt={"business potential"}
+              />
+            </div>
             <p className="text-[#506473] text-sm">
               We create brand experiences which are memorable and distinct. Our
               experienced team create and develop brands with personality and

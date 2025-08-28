@@ -4,13 +4,13 @@ import TitleFormate from "./TitleFormate";
 import AnimatedBtn from "./shared/AnimatedBtn";
 
 const CapableOf = () => {
-    const data = categories || [];
+  const data = categories || [];
   return (
     <div className="bg-[#EDEFF1]">
       <div className="container mx-auto py-10 lg:py-32">
-        <div className="flex flex-col md:flex-row  justify-center items-center">
+        <div className="flex flex-col md:flex-row  justify-center items-start lg:items-center">
           <div className="flex-1">
-            <div className=" px-3 md:px-0 max-w-xs mx-auto space-y-5 lg:space-y-12">
+            <div className=" px-5 lg:px-3 max-w-sm lg:max-w-xs mx-auto space-y-5 lg:space-y-12">
               <TitleFormate upperTxt={"What are"} belowTxt={"we capable of"} />
               <p className="text-[#506473] text-sm">
                 By focusing on design as an enabler and putting a huge emphasis

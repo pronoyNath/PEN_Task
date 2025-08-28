@@ -7,7 +7,7 @@ export const CategoryList = ({ categories }) => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 font-semibold px-16">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 font-semibold px-5 lg:px-16">
       {categories.map((cat, i) => (
         <div key={i} className="space-y-3">
           <h3 className="text-xl font-semibold text-gray-800 tracking-widest">
