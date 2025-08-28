@@ -10,3 +10,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* antD tabs custom css  */
+
+.ant-tabs .ant-tabs-tab {
+  color: #454f5b !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  transition: all 0.5s ease-in-out;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+.ant-tabs-nav {
+  border-bottom: 2px solid;
+  width: 100%;
+  border-color: #c5c5c5;
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+  background: #C0345E;
+}
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: rgb(19, 18, 18) !important;
+}

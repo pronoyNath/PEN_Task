@@ -7,7 +7,7 @@ const CapableOf = () => {
   const data = categories || [];
   return (
     <div className="bg-[#EDEFF1]">
-      <div className="container mx-auto py-10 lg:py-32">
+      <div className=" container mx-auto py-10 lg:py-32">
         <div className="flex flex-col md:flex-row  justify-center items-start lg:items-center">
           <div className="flex-1">
             <div className=" px-5 lg:px-3 max-w-sm lg:max-w-xs mx-auto space-y-5 lg:space-y-12">

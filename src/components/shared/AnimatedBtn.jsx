@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const AnimatedBtn = ({ to, text, lineColor = "bg-pink-600" }) => {
+const AnimatedBtn = ({
+  to,
+  text,
+  textColor = "text-gray-800",
+  lineColor = "bg-pink-600",
+}) => {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -12,7 +17,12 @@ const AnimatedBtn = ({ to, text, lineColor = "bg-pink-600" }) => {
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
     >
-      <Link to={to} className={`hover:italic transition-all duration-150 ease-in-out text-lg font-medium text-gray-800`}>
+      <Link
+        to={to}
+        className={`hover:italic transition-all duration-150 ease-in-out text-lg font-medium ${
+          textColor ? textColor : "text-gray-800"
+        }`}
+      >
         {text}
       </Link>
 
