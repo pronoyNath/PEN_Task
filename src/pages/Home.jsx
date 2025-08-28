@@ -10,12 +10,10 @@ const Home = () => {
       <Header />
       <main>
         <Hero />
-        <CapableOf/>
-        <div>
-          <RecentProjects/>
-        </div>
+        <CapableOf />
+        <RecentProjects />
         <div className="bg-yellow-50 min-h-[300px]"></div>
-        <Footer/>
+        <Footer />
       </main>
     </div>
   );
